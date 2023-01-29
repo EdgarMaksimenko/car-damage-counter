@@ -142,7 +142,10 @@
     margin-bottom: 10px;
   }
   .repair__parts{
-    height: 70vh;
+    height: 60vh;
     overflow-y: auto;
+  }
+  .repair__parts__item p{
+    margin: 5px 0;
   }
 }
