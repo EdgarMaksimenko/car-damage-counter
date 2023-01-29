@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styles from './App.module.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import CarBrands from '../../pages/CarBrands/CarBrands';
 import CarModels from '../../pages/CarModels/CarModels';
 import CarDetails from '../../pages/CarDetails/CarDetails';
@@ -16,15 +16,14 @@ const App: FC = () => {
       <div className='container'>
         <div className={styles.content}>
           <Routes>
-            <Route path='car-damage-counter/' element={<CarBrands />} />
-            <Route path='car-damage-counter/:brand' element={<CarModels />} />
-            <Route path='car-damage-counter/:brand/custom' element={<Custom/>} />
-            <Route path='car-damage-counter/:brand/:model' element={<CarDetails />} />
+            <Route path='*' element={<Navigate to='/'/>} />
+            <Route path='/' element={<CarBrands />} />
+            <Route path='/:brand' element={<CarModels />} />
+            <Route path='/:brand/custom' element={<Custom/>} />
+            <Route path='/:brand/:model' element={<CarDetails />} />
           </Routes>
         </div>
       </div>
-      {/* <Route path='*' element={<Navigate to='/404' />} />
-          <Route path ='/404' element={<NotFound/>}/>  */}
     </div>
   )
 };

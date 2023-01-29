@@ -49,7 +49,7 @@ const RepairInfo: FC<IRepairInfoProps> = (props) => {
       }
       postToTelegram(finalInfo);
       reset();
-      navigate('car-damage-counter/');
+      navigate('/');
     };
 
     return (
@@ -95,7 +95,7 @@ const RepairInfo: FC<IRepairInfoProps> = (props) => {
       }
       postCustomToTelegram(finalInfo);
       reset();
-      navigate('car-damage-counter/');
+      navigate('/');
     };
 
     return (
