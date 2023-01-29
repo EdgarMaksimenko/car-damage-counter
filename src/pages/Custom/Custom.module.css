@@ -1,0 +1,142 @@
+.part__custom{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.add__block{
+  display: flex;
+  align-items: center;
+}
+.add__btn button{
+  font-size: 21px;
+  margin: 10px 0;
+  color: white;
+  padding: 10px 10px;
+  background: linear-gradient(357deg, #cbad33 0%, #ca5005 100%);
+}
+.add__btn button:active{
+  box-shadow: 0 0 10px white;
+}
+.part__custom__item{
+  width: 23%;
+  background: #212322;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.part__custom__item p{
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+p.add__info{
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align-last: left;
+  margin: 5px 20px;
+}
+.buttons__main, .buttons__extra{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.buttons__main{
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.buttons__main button, .buttons__extra button{
+  font-size: 21px;
+  margin: 10px 0;
+  color: white;
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 30%;
+}
+.buttons__main button:active, .buttons__extra button:active{
+  box-shadow: 0 0 10px white;
+}
+.buttons__main button{
+  background: linear-gradient(357deg, #1a8456 0%, #1d4409 100%);
+}
+.buttons__extra button{
+  background: #5B5D5D;
+}
+.category{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.category button{
+  text-align: center;
+  font-size: 25px;
+  padding: 5px 10px;
+  background: linear-gradient(357deg, #CB333B 0%, #631D1B 100%);
+  color: whitesmoke;
+  margin-bottom: 10px;
+}
+.category button.active{
+  border: 1px solid whitesmoke;
+}
+
+@media (max-width: 1500px){
+  .part__custom__item{
+    width: 32%;
+  }
+}
+@media (max-width: 990px){
+  .part__custom__item{
+    width: 48%;
+  }
+}
+@media (max-width: 650px){
+  .part__custom{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .part__custom__item{
+    width: 65%;
+  }
+  .part__custom__item p{
+    font-size: 20px;
+  }
+  .add__btn button{
+    font-size: 18px;
+  }
+  p.add__info{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-align-last: left;
+    margin: 5px 20px;
+  }
+  .buttons__main button, .buttons__extra button{
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 30%;
+  }
+  .buttons__main{
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .category button{
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px){
+  .part__custom__item{
+    width: 80%;
+  }
+}

@@ -1,0 +1,148 @@
+.repair__info{
+  width: 35%;
+  height: 100vh;
+  background: #212322;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px;
+  transform: translateX(100%);
+  transition: .5s;
+}
+.repair__info.active{
+  transform: translateY(0);
+  transition: .5s;
+}
+.title__brand{
+  text-align: center;
+  font-size: 35px;
+  margin-top: 5px;
+}
+.title__model{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.repair__parts{
+  height: 80vh;
+  overflow-y: auto;
+}
+.repair__parts::-webkit-scrollbar{
+  background: transparent;
+  width: 5px;
+}
+.repair__parts::-webkit-scrollbar-thumb{
+  background: #CB333B;
+  border-radius: 50px;
+}
+.repair__parts__item{
+  position: relative;
+  background: rgb(181, 167, 167);
+  color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 23px;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.repair__parts__item p{
+  margin: 10px 0;
+}
+.repair__parts__item button{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+.repair__parts__item button img{
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+}
+.repair__footer{
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 35px;
+}
+.repair__footer button{
+  padding: 5px 15px;
+  font-size: 20px;
+  border-radius: 20px;
+  color: whitesmoke;
+  background: linear-gradient(357deg, #1a8456 0%, #1d4409 100%);
+}
+.repair__footer form {
+  display: flex;
+  align-items: center;
+}
+.repair__footer input{
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 150px;
+  margin-right: 20px;
+  text-align: center;
+}
+@media (max-width: 1600px){
+  .repair__info{
+    width: 45%;
+  }
+  .repair__footer{
+    font-size: 25px;
+  }
+}
+@media (max-width: 1200px){
+  .repair__info{
+    width: 60%;
+  }
+}
+@media (max-width: 950px){
+  .repair__info{
+    width: 80%;
+  }
+}
+@media (max-width: 750px){
+  .repair__info{
+    width: 100%;
+  }
+}
+@media (max-width: 650px){
+  .repair__parts__item{
+    font-size: 18px;
+  }
+  .repair__parts__item button{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+  }
+  .repair__footer input{
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  .repair__footer{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .repair__footer p{
+    margin-bottom: 10px;
+  }
+  .repair__parts{
+    height: 70vh;
+    overflow-y: auto;
+  }
+}
