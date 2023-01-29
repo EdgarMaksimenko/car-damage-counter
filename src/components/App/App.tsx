@@ -16,7 +16,7 @@ const App: FC = () => {
       <div className='container'>
         <div className={styles.content}>
           <Routes>
-            <Route path='/car-damage-counter' element={<CarBrands />} />
+            <Route path='/' element={<CarBrands />} />
             <Route path='/:brand' element={<CarModels />} />
             <Route path='/:brand/custom' element={<Custom/>} />
             <Route path='/:brand/:model' element={<CarDetails />} />
