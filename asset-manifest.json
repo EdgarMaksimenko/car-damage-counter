@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/car-damage-counter/static/css/main.587b37d3.css",
-    "main.js": "/car-damage-counter/static/js/main.2a5e05f1.js",
+    "main.js": "/car-damage-counter/static/js/main.84a75ed3.js",
     "static/media/repair-icon.png": "/car-damage-counter/static/media/repair-icon.56edb4dfc8f603b0f7c0.png",
     "static/media/main-bg.jpg": "/car-damage-counter/static/media/main-bg.1b7379aab5e358fa752d.jpg",
     "static/media/close-btn.png": "/car-damage-counter/static/media/close-btn.0d6aa88523688ce245e4.png",
     "static/media/logo.svg": "/car-damage-counter/static/media/logo.312c59344073574dc718.svg",
     "index.html": "/car-damage-counter/index.html",
     "main.587b37d3.css.map": "/car-damage-counter/static/css/main.587b37d3.css.map",
-    "main.2a5e05f1.js.map": "/car-damage-counter/static/js/main.2a5e05f1.js.map"
+    "main.84a75ed3.js.map": "/car-damage-counter/static/js/main.84a75ed3.js.map"
   },
   "entrypoints": [
     "static/css/main.587b37d3.css",
-    "static/js/main.2a5e05f1.js"
+    "static/js/main.84a75ed3.js"
   ]
 }
