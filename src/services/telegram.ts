@@ -41,13 +41,9 @@ export const postCustomToTelegram = (data:IFinalCustomInfo) => {
   let message = `<b>Vin: ${data.vin}</b>\n`;
   message += `<b>Машина: </b>${data.car}\n\n`;
   data.parts.forEach(item => {
-    if (item.count === 0){
-      message += `<b>Рихтовка (${item.name}) : ${item.workPrice}$</b>\n\n`;
-    }else{
-      message += `<b>${item.name} ${item.count}шт : ${item.partPrice}$</b>\n`;
-      message += `<b>Работа : ${item.workPrice}$</b>\n`;
-      message += `<b>Всего : ${item.totalPrice}$</b>\n\n`;
-    }
+    message += `<b>${item.name} ${item.count}шт : ${item.partPrice}$</b>\n`;
+    message += `<b>Работа : ${item.workPrice}$</b>\n`;
+    message += `<b>Всего : ${item.totalPrice}$</b>\n\n`;
   });
   message += `<b>Ремонт: ${data.total}$</b>\n`;
   
