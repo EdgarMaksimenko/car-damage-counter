@@ -7,7 +7,7 @@ const CarBrands: FC = () => {
   return (
     <div className={styles.brands}>
       {carModels.map((car, index) =>
-        <NavLink to={`/${car.name}`} className={styles.brands__item} key={index}>
+        <NavLink to={`car-damage-counter/${car.name}`} className={styles.brands__item} key={index}>
           <div className={styles.brands__item__img} style={{backgroundImage: `url(${car.img})`}}></div>
           <p>{car.name}</p>
         </NavLink>

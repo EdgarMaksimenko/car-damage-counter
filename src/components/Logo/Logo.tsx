@@ -4,7 +4,7 @@ import styles from './Logo.module.css';
 
 const Logo: FC = () => {
   return (
-    <NavLink to='/'><div className={styles.logo}></div></NavLink>
+    <NavLink to='car-damage-counter/'><div className={styles.logo}></div></NavLink>
   )
 };
 
