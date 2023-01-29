@@ -70,9 +70,10 @@ p.add__info{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .category button{
+  width: 15%;
   text-align: center;
   font-size: 25px;
   padding: 5px 10px;
@@ -88,10 +89,21 @@ p.add__info{
   .part__custom__item{
     width: 32%;
   }
+  .category button{
+    width: 19%;
+  }
+}
+@media (max-width: 1200px){
+  .category button{
+    width: 24%;
+  }
 }
 @media (max-width: 990px){
   .part__custom__item{
     width: 48%;
+  }
+  .category button{
+    width: 30%;
   }
 }
 @media (max-width: 650px){
@@ -138,5 +150,8 @@ p.add__info{
 @media (max-width: 500px){
   .part__custom__item{
     width: 80%;
+  }
+  .category button{
+    width: 40%;
   }
 }
