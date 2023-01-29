@@ -16,11 +16,11 @@ const App: FC = () => {
       <div className='container'>
         <div className={styles.content}>
           <Routes>
-            <Route path='*' element={<Navigate to='/'/>} />
-            <Route path='/' element={<CarBrands />} />
-            <Route path='/:brand' element={<CarModels />} />
-            <Route path='/:brand/custom' element={<Custom/>} />
-            <Route path='/:brand/:model' element={<CarDetails />} />
+            
+            <Route path='/car-damage-counter/' element={<CarBrands />} />
+            <Route path='/car-damage-counter/:brand' element={<CarModels />} />
+            <Route path='/car-damage-counter/:brand/custom' element={<Custom/>} />
+            <Route path='/car-damage-counter/:brand/:model' element={<CarDetails />} />
           </Routes>
         </div>
       </div>

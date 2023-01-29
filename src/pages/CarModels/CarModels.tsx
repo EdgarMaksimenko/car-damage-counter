@@ -19,9 +19,9 @@ const CarModels: FC = () => {
 
 
       <div className={styles.models}>
-        <NavLink to={`/${brand}/custom`}>CUSTOM</NavLink>
+        <NavLink to={`/car-damage-counter/${brand}/custom`}>CUSTOM</NavLink>
         {models.map((item,index) =>
-          <NavLink to={`/${brand}/${item.model}`} key={index}>{item.model}</NavLink>
+          <NavLink to={`/car-damage-counter/${brand}/${item.model}`} key={index}>{item.model}</NavLink>
         )}
       </div>
     </>
