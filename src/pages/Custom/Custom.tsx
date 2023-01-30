@@ -6,11 +6,13 @@ import { useParams } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../../hooks';
 import { addCustomPart, changeCustomPartPrice, changeCustomPartCount, changeCustomPartRepair, clearCustomTotal } from '../../store/slices/totalCustomSlice';
 import { dataCustom } from '../../data';
+import { dataCustomSearch } from '../../data';
 
 const Custom: FC = () => {
   const { brand } = useParams();
   const dispatch = useAppDispatch();
   const [category, setCategory] = React.useState(dataCustom[0].category);
+  const [searchValue, setSearchValue] = React.useState('');
   const allItems = useAppSelector(state => state.totalCustomList.carCustomParts);
 
 
@@ -70,19 +72,28 @@ const Custom: FC = () => {
 
   return (
     <>
-      <div className={styles.category}>
+      {/* CATEGORY VARIANT */}
+      {/* <div className={styles.category}>
         {dataCustom.map(item =>
           <button key={item.id}
             onClick={() => setCategory(item.category)}
             className={item.category === category ? styles.active : ' '}
           >{item.name}</button>
         )}
-      </div>
+      </div> */}
+
+      {/* SEARCH VARIANT */}
+      <input
+        type="text"
+        onChange={e => setSearchValue(e.target.value)}
+        className={styles.search}
+        placeholder='Поиск ...'
+      />
 
       <div className={styles.part__custom}>
         <ButtonRepair buttonType={'custom'} />
         <RepairInfo brand={brand} model={'custom'} />
-        {dataCustom.find(el => el.category === category)?.items.map((item, index) =>
+        {dataCustomSearch.filter(el => el.toUpperCase().includes(searchValue.toUpperCase()))?.map((item, index) =>
           <div className={styles.part__custom__item} key={index}>
             <p>{item}</p>
             <div className={styles.add__block}>
