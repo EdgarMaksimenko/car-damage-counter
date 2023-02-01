@@ -7,6 +7,7 @@ import { useAppSelector, useAppDispatch } from '../../hooks';
 import { addCustomPart, changeCustomPartPrice, changeCustomPartCount, changeCustomPartRepair, clearCustomTotal } from '../../store/slices/totalCustomSlice';
 import { dataCustom } from '../../data';
 import { dataCustomSearch } from '../../data';
+import Search from '../../components/Search/Search';
 
 const Custom: FC = () => {
   const { brand } = useParams();
@@ -83,12 +84,7 @@ const Custom: FC = () => {
       </div> */}
 
       {/* SEARCH VARIANT */}
-      <input
-        type="text"
-        onChange={e => setSearchValue(e.target.value)}
-        className={styles.search}
-        placeholder='Поиск ...'
-      />
+      <Search setSearchValue={setSearchValue}/>
 
       <div className={styles.part__custom}>
         <ButtonRepair buttonType={'custom'} />
